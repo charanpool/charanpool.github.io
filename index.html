@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charan Koppuravuri | Senior Software Engineer</title>
+    <meta name="description" content="Senior Software Engineer with 7+ years of experience in Python, LLMs, AWS, and distributed systems.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230a0a0f' width='100' height='100' rx='20'/><text y='.9em' x='50' text-anchor='middle' font-size='70' fill='%23f59e0b' font-family='monospace'>CK</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Snow Canvas -->
+    <canvas id="snow-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>CK<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-up">
+                <span class="status-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title animate-fade-up delay-1">
+                Hi, I'm <span class="highlight">Charan</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-up delay-2">Senior Software Engineer</p>
+            <p class="hero-description animate-fade-up delay-3">
+                Building scalable AI-driven systems and distributed architectures.<br>
+                Passionate about transforming complex problems into elegant solutions.
+            </p>
+            
+            <div class="hero-stats animate-fade-up delay-4">
+                <div class="stat">
+                    <span class="stat-number" data-target="7">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Years of<br>Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Major<br>Projects</span>
+                </div>
+            </div>
+            
+            <div class="hero-cta animate-fade-up delay-5">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Let's Connect</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <span>View Work</span>
+                </a>
+            </div>
+            
+            <div class="hero-social animate-fade-up delay-5">
+                <a href="https://github.com/charanpool" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/charan-koppuravuri" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:saicharan.koppuravuri99@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-visual animate-fade-up delay-2">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <div class="placeholder-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="profile-info">
+                    <h3>Charan Koppuravuri</h3>
+                    <p>Sr. Software Engineer</p>
+                </div>
+                <div class="profile-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">Agentic AI</span>
+                    <span class="tag">LLMs</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">The Person Behind the Code</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Hey! I'm a backend engineer who genuinely loves what I do. Over the past <strong>7+ years</strong>, I've been lucky enough to work on some really cool projects — from AI systems that think for themselves to platforms that handle massive amounts of data.
+                    </p>
+                    <p>
+                        What gets me excited? Taking a messy, complex problem and turning it into something elegant that just works. I'm the kind of engineer who'll own a feature from the first whiteboard sketch all the way to watching it run smoothly in production (and yes, I'll still be checking the logs at 2 AM because I care that much).
+                    </p>
+                    <p>
+                        These days, I'm deep into the world of AI agents and LLMs — building systems that can actually understand and act on information at scale. It's fascinating stuff, and I'm having a blast figuring out what's possible.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>End-to-End Ownership</h4>
+                                <p>I see projects through from idea to production</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <h4>AI Enthusiast</h4>
+                                <p>LLMs, RAG, and building smart agents</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-cloud"></i>
+                            <div>
+                                <h4>Cloud Native</h4>
+                                <p>AWS is my playground</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Personal Interests -->
+            <div class="interests-section">
+                <h3 class="interests-title">When I'm Not Coding...</h3>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h4>Movies & Series</h4>
+                            <p>Big fan of sci-fi, thrillers, and anything with a good plot twist. Always up for movie recommendations!</p>
+                        </div>
+                    </div>
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h4>Travelling</h4>
+                            <p>Love exploring new places, trying local food, and getting lost in cities I've never been to before.</p>
+                        </div>
+                    </div>
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h4>Reading</h4>
+                            <p>Tech blogs, system design deep-dives, and the occasional fiction to switch off.</p>
+                        </div>
+                    </div>
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="interest-content">
+                            <h4>Gaming</h4>
+                            <p>Strategy games and RPGs are my go-to. Sometimes the best debugging happens after a gaming break!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            
+            <div class="timeline">
+                <!-- Gameopedia -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Gameopedia</h3>
+                                <span class="role">Senior Software Engineer</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="duration"><i class="far fa-calendar"></i> June 2025 — Present</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Hyderabad</span>
+                            </div>
+                        </div>
+                        <p class="timeline-summary">
+                            Building the future of AI-powered data classification in the gaming industry. This one's been a wild ride!
+                        </p>
+                        <ul class="timeline-details">
+                            <li>Created <strong>Braigent</strong> from scratch — an AI platform that lets non-technical folks build their own classification agents. Pretty cool seeing business teams use it without needing us!</li>
+                            <li>The system now hits <strong>95%+ accuracy</strong> on tag classification, which honestly exceeded our initial expectations</li>
+                            <li>Built pipelines that chew through <strong>~2 TB of gaming data daily</strong>. Lots of late nights optimizing that one!</li>
+                            <li>Working closely with product teams to turn their domain expertise into deployable AI agents</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>LLMs</span>
+                            <span>Agentic AI</span>
+                            <span>Data Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Druva -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Druva Solutions</h3>
+                                <span class="role">Staff Software Engineer</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="duration"><i class="far fa-calendar"></i> Sept 2022 — March 2025</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Hyderabad</span>
+                            </div>
+                        </div>
+                        <p class="timeline-summary">
+                            Owned core backup & recovery features for enterprise SaaS. Learned what "scale" really means here.
+                        </p>
+                        <ul class="timeline-details">
+                            <li>Took charge of backup and restore for <strong>Salesforce, Microsoft EntraID, and Dynamics 365</strong> — the kind of data companies really can't afford to lose</li>
+                            <li>Built a Data Discovery algorithm that finds and maps <strong>3.5M+ records per hour</strong>. Speed was everything here</li>
+                            <li>Pitched an idea for automatic data expiration — it worked so well that other teams adopted it company-wide 🎉</li>
+                            <li>Created a reliability checker that validates S3 backups. Customers sleep better, and so do I</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>AWS</span>
+                            <span>Microservices</span>
+                            <span>SaaS</span>
+                            <span>Scaling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ATAI Labs (Combined) -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">ATAI Labs</h3>
+                                <span class="role">Software Engineer</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="duration"><i class="far fa-calendar"></i> Jul 2018 — Sept 2022</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Hyderabad</span>
+                            </div>
+                        </div>
+                        <p class="timeline-summary">
+                            Where it all began! From trainee to team lead — this is where I fell in love with IoT and real-world systems.
+                        </p>
+                        
+                        <!-- Sub-role: Software Engineer -->
+                        <div class="timeline-subrole">
+                            <div class="subrole-header">
+                                <span class="subrole-title">Software Engineer</span>
+                                <span class="subrole-duration">Mar 2020 — Sept 2022</span>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Built digital twins of shipping terminals using GPS/GNSS — we got positioning down to <strong>1-foot accuracy</strong>. Mind-blowing when you see it work</li>
+                                <li>Created navigation services that find the fastest routes through container yards. Like Google Maps, but for forklifts</li>
+                                <li>Got promoted to lead a team of 6 for Gate & Rake automation — my first taste of engineering leadership</li>
+                                <li>Deployed our systems at terminals across India. Nothing beats seeing your code run in the real world</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Sub-role: Trainee -->
+                        <div class="timeline-subrole">
+                            <div class="subrole-header">
+                                <span class="subrole-title">Software Engineer Trainee</span>
+                                <span class="subrole-duration">Jul 2018 — Feb 2020</span>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Got my hands dirty with IoT — worked with LoRa networks and Semtech gateways</li>
+                                <li>Built the backend that made all our IoT devices talk to each other seamlessly</li>
+                                <li>Learned that the best code is the code that works reliably in the real world, not just in tests</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>C/C++</span>
+                            <span>GPS/GNSS</span>
+                            <span>IoT</span>
+                            <span>LoRa</span>
+                            <span>Navigation</span>
+                            <span>Team Lead</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="section-header" style="margin-top: 4rem;">
+                <span class="section-tag">Education</span>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            
+            <div class="education-cards">
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Gayatri Vidya Parishad (Autonomous)</h3>
+                        <p class="edu-degree">B.Tech in Electronics and Communications Engineering</p>
+                        <div class="edu-meta">
+                            <span><i class="far fa-calendar"></i> 2014 — 2018</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Visakhapatnam</span>
+                            <span><i class="fas fa-percent"></i> 80.49%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Sri Chaitanya Educational Institutions</h3>
+                        <p class="edu-degree">Intermediate (+2) — MPC</p>
+                        <div class="edu-meta">
+                            <span><i class="far fa-calendar"></i> 2012 — 2014</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Vijayawada</span>
+                            <span><i class="fas fa-percent"></i> 97%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">NoSQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Vertex AI</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">MCP</span>
+                        <span class="skill-tag">Agentic AI</span>
+                        <span class="skill-tag">LLM Orchestration</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend & Architecture</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">gRPC</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Falcon</span>
+                        <span class="skill-tag">CherryPy</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fab fa-aws"></i>
+                        <h3>Cloud & AWS</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">ECS</span>
+                        <span class="skill-tag">SQS</span>
+                        <span class="skill-tag">Lambda</span>
+                        <span class="skill-tag">API Gateway</span>
+                        <span class="skill-tag">Aurora DB</span>
+                        <span class="skill-tag">DynamoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Distributed Systems</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">RabbitMQ</span>
+                        <span class="skill-tag">Celery</span>
+                        <span class="skill-tag">MQTT</span>
+                        <span class="skill-tag">Task Queues</span>
+                        <span class="skill-tag">Event Driven</span>
+                        <span class="skill-tag">Multi Processing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CloudFormation</span>
+                        <span class="skill-tag">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/charanpool/rag-news-summarizer" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Open Source</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">RAG News Summarizer</h3>
+                        <p class="project-description">
+                            A local-first RAG pipeline that fetches news from RSS feeds, indexes them in ChromaDB, and generates AI-powered summaries using Ollama. Built with LangChain and Streamlit.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>LangChain</span>
+                            <span>ChromaDB</span>
+                            <span>Ollama</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/charanpool/user_identification_based_on_keystrokes" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">ML/Security</span>
+                        </div>
+                        <h3 class="project-title">Keystroke Biometrics</h3>
+                        <p class="project-description">
+                            ML-powered biometric authentication system identifying users based on unique typing patterns. Achieved 92% accuracy across 120+ users.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://drive.google.com/drive/folders/1O5NO9X6jJLr8_yP6DdYCfVQrdsXlGA8a" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Hardware</span>
+                            <span class="project-year">IIT Bombay 2015</span>
+                        </div>
+                        <h3 class="project-title">SoUL - Solar Urja Lamp</h3>
+                        <p class="project-description">
+                            Cost-effective, power-efficient solar lamp for rural households. Top-3 ranking among 600+ participants at IIT Bombay Techfest.
+                        </p>
+                        <div class="project-tech">
+                            <span>Solar</span>
+                            <span>IoT</span>
+                            <span>Hardware</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/charanpool/sudoku-solver" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-type">Algorithm</span>
+                        </div>
+                        <h3 class="project-title">Sudoku Solver</h3>
+                        <p class="project-description">
+                            Python Sudoku solver using human-like strategies: naked pairs, hidden singles, and constraint propagation.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Recognition</span>
+                <h2 class="section-title">Achievements & Certifications</h2>
+            </div>
+            
+            <div class="achievements-grid">
+                <a href="https://ijcrt.org/papers/IJCRT1803142.pdf" target="_blank" class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4>Research Publication</h4>
+                        <p>Mathematical research paper published in IJCRT</p>
+                    </div>
+                    <i class="fas fa-external-link-alt achievement-link"></i>
+                </a>
+
+                <a href="https://coursera.org/share/f3e6ed35bd860400c3644b13f8391021" target="_blank" class="achievement-card">
+                    <div class="achievement-icon stanford">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4>Stanford University</h4>
+                        <p>Machine Learning Certification</p>
+                    </div>
+                    <i class="fas fa-external-link-alt achievement-link"></i>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1-bpVisXGn1g083p22H6WIOHt-sf2Dt33/view" target="_blank" class="achievement-card">
+                    <div class="achievement-icon microsoft">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4>Microsoft MTA</h4>
+                        <p>Software Development Certification</p>
+                    </div>
+                    <i class="fas fa-external-link-alt achievement-link"></i>
+                </a>
+
+                <a href="https://www.hackerrank.com/certificates/9d66b2498914" target="_blank" class="achievement-card">
+                    <div class="achievement-icon hackerrank">
+                        <i class="fab fa-hackerrank"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h4>HackerRank</h4>
+                        <p>Python & Problem Solving Certified</p>
+                    </div>
+                    <i class="fas fa-external-link-alt achievement-link"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+            </div>
+            
+            <div class="contact-content">
+                <p class="contact-intro">
+                    Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+                </p>
+                
+                <div class="contact-methods">
+                    <a href="mailto:saicharan.koppuravuri99@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>saicharan.koppuravuri99@gmail.com</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/charan-koppuravuri" target="_blank" class="contact-card">
+                        <div class="contact-icon linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>LinkedIn</h4>
+                            <p>Connect with me</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/charanpool" target="_blank" class="contact-card">
+                        <div class="contact-icon github">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>GitHub</h4>
+                            <p>Check out my code</p>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon location">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Location</h4>
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>CK<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built by Charan Koppuravuri
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/charanpool" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/charan-koppuravuri" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:saicharan.koppuravuri99@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Charan Koppuravuri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
