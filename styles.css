@@ -458,13 +458,10 @@ body {
 /* Hero Visual */
 .hero-visual {
     flex-shrink: 0;
-    max-width: 320px;
 }
 
 .profile-card {
     position: relative;
-    width: 280px;
-    max-width: 280px;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-xl);
@@ -472,7 +469,6 @@ body {
     text-align: center;
     box-shadow: var(--shadow-lg);
     transition: all var(--transition-base);
-    overflow: hidden;
 }
 
 .profile-card:hover {
