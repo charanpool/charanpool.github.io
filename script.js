@@ -405,7 +405,7 @@ Built with ❤️ using vanilla HTML, CSS, and JavaScript.
 Want to connect? 
 → GitHub: https://github.com/charanpool
 → LinkedIn: linkedin.com/in/charan-koppuravuri
-→ Email: saicharan.koppuravuri99@gmail.com
+→ Email: charan.code1@gmail.com
 `,
 'color: #f59e0b; font-size: 18px; font-weight: bold;',
 'color: #a0a0b0; font-size: 12px;'
