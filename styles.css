@@ -1275,13 +1275,14 @@ body {
 
 .contact-methods {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
+    align-items: stretch;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .contact-methods {
         grid-template-columns: 1fr;
     }
@@ -1291,12 +1292,13 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 24px;
+    padding: 20px;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
     text-decoration: none;
     transition: all var(--transition-base);
+    min-height: 100px;
 }
 
 .contact-card:hover {
@@ -1319,10 +1321,12 @@ body {
 
 .contact-icon.linkedin { background: #0077b5; color: #fff; }
 .contact-icon.github { background: #333; color: #fff; }
-.contact-icon.location { background: var(--bg-tertiary); color: var(--accent-primary); }
+.contact-icon.devto { background: #0a0a0a; color: #fff; }
 
 .contact-info {
     text-align: left;
+    flex: 1;
+    min-width: 0;
 }
 
 .contact-info h4 {
@@ -1347,7 +1351,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 180px;
+    max-width: 100%;
 }
 
 .contact-link-icon {
