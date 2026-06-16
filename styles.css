@@ -1231,6 +1231,7 @@ body {
 .achievement-icon.stanford { color: #8b0000; }
 .achievement-icon.microsoft { color: #00a4ef; }
 .achievement-icon.hackerrank { color: #00ea64; }
+.achievement-icon.nineam { color: #ffb800; }
 
 .achievement-content {
     flex: 1;
